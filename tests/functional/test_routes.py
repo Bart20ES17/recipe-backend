@@ -29,7 +29,7 @@ def test_create_recipe(testing_client):
     
 
 def test_delete_recipe(testing_client):
-    response = testing_client.delete('/1')
+    response = testing_client.delete('/recipes/1')
     assert response.status_code == 200
 
 
