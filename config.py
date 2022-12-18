@@ -18,7 +18,6 @@ class ProductionConfig(Config):
         dbname=os.getenv('DBNAME')
     )
 
-
 class DevelopmentConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql://{dbuser}:{dbpass}@{dbhost}/{dbname}'.format(
         dbuser=os.getenv('DBUSER'),
