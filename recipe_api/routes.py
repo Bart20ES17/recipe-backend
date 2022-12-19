@@ -1,10 +1,17 @@
-from flask import Flask, request
+from flask import Flask, request, redirect
 from recipe_api import db, app
 from recipe_api.models import Recipe
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    """
+    This way of forwarding to the main page is not the most correct.
+    Rather, it should be done by optimizing the original '/' path to 
+    '/recipes' automatically. However, redirection is applied due to 
+    lack of time to implement the other version.
+    """
+    
+    return redirect('/recipes')'
 
 @app.route('/recipes', methods=['POST'])
 def create_recipe():
