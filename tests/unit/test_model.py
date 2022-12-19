@@ -3,9 +3,7 @@ import pytest
 
 def test_create_recipe():
     """
-    CHANGE THIS DESCRIPTION!
-
-    GIVEN a Account model
+    GIVEN a Recipe model
     WHEN a new Recipe is created
     THEN check the name, steps, rating, ingredients, favorite fields are defined correctly
     """
