@@ -87,7 +87,7 @@ def test_dummy_wrong_method():
     THEN check the response is valid
     """
     with app.test_client() as client:
-        response = client.post('/')
+        response = client.post('/recipes')
         assert response.status_code == 400
 
 
