@@ -11,7 +11,7 @@ def hello_world():
     lack of time to implement the other version.
     """
     
-    return redirect('/recipes')'
+    return redirect('/recipes')
 
 @app.route('/recipes', methods=['POST'])
 def create_recipe():
